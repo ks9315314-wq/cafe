@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+    <title>Brew Bliss Café — Your Daily Dose of Happiness</title>
+    <meta
+      name="description"
+      content="Brew Bliss Café — freshly brewed coffee, delicious desserts, and relaxing moments in a cozy atmosphere."
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">☕</span>
+          <span class="logo-text">Brew Bliss</span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-cta-mobile">
+            <a href="#menu" class="btn btn-primary nav-order-btn">Order Now</a>
+          </li>
+        </ul>
+        <a href="#menu" class="btn btn-primary nav-order-btn desktop">
+          Order Now
+        </a>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Your Daily Dose of Happiness</h1>
+        <p class="hero-subtitle">
+          Freshly brewed coffee, homemade desserts, and a warm atmosphere —
+          welcome to your new favorite corner.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#contact" class="btn btn-outline">Visit Us</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about" id="about">
+      <div class="section-container">
+        <div class="about-grid reveal">
+          <div class="about-image">
+            <img
+              src="https://images.pexels.com/photos/35518412/pexels-photo-35518412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              alt="Cozy interior of Brew Bliss Café"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text">
+            <span class="section-tag">Our Story</span>
+            <h2 class="section-title">Welcome to Brew Bliss Café</h2>
+            <p>
+              Nestled in the heart of the city, Brew Bliss Café is more than a
+              coffee shop — it's a cozy retreat where every cup tells a story.
+              We serve freshly brewed coffee made from ethically sourced beans,
+              delicious homemade desserts, and a calming space to unwind, catch
+              up with friends, or simply savor the moment.
+            </p>
+            <p>
+              Our passionate baristas pour their heart into every latte, and our
+              kitchen crafts each pastry with love. Whether you're stopping by
+              for your morning espresso or lingering over a slice of cake in the
+              afternoon, we want you to feel right at home.
+            </p>
+            <div class="about-features">
+              <div class="feature-item">
+                <span class="feature-icon">🌱</span>
+                <span>Ethically Sourced Beans</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">👩‍🍳</span>
+                <span>Homemade Desserts</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">🛋️</span>
+                <span>Cozy Atmosphere</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">📶</span>
+                <span>Free Wi-Fi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MENU ==================== -->
+    <section class="menu" id="menu">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Our Menu</span>
+          <h2 class="section-title">Crafted with Love</h2>
+          <p class="section-description">
+            From classic espresso drinks to indulgent desserts — every item is
+            made fresh to order.
+          </p>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <!-- Cards are injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SPECIAL OFFERS ==================== -->
+    <section class="offers" id="offers">
+      <div class="offers-overlay"></div>
+      <div class="offers-content reveal">
+        <span class="section-tag light">Limited Time</span>
+        <h2 class="offers-title">Make Every Sip Special</h2>
+        <p class="offers-text">
+          Join our rewards program and get 20% off your first order, plus a free
+          pastry on your birthday. Because great coffee deserves great company.
+        </p>
+        <a href="#menu" class="btn btn-primary btn-lg">Explore Offers</a>
+      </div>
+    </section>
+
+    <!-- ==================== GALLERY ==================== -->
+    <section class="gallery" id="gallery">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Gallery</span>
+          <h2 class="section-title">A Feast for the Eyes</h2>
+          <p class="section-description">
+            Take a peek at our cozy café, delicious drinks, and happy moments.
+          </p>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Gallery items are injected by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card reveal">
+            <div class="stars" data-rating="5"></div>
+            <p class="testimonial-text">
+              "The best cappuccino I've had in the city! The atmosphere is so
+              warm and inviting — I come here every weekend to read and relax."
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar">S</div>
+              <div class="author-info">
+                <span class="author-name">Sarah Mitchell</span>
+                <span class="author-role">Regular Customer</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars" data-rating="5"></div>
+            <p class="testimonial-text">
+              "Their chocolate brownie is absolutely divine. Pair it with a latte
+              and you're in heaven. The staff are incredibly friendly too!"
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar">J</div>
+              <div class="author-info">
+                <span class="author-name">James Okoro</span>
+                <span class="author-role">Food Blogger</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card reveal">
+            <div class="stars" data-rating="4"></div>
+            <p class="testimonial-text">
+              "A hidden gem! The cold coffee is perfect for summer, and the
+              interior is Instagram-worthy. Highly recommend to any coffee
+              lover."
+            </p>
+            <div class="testimonial-author">
+              <div class="avatar">E</div>
+              <div class="author-info">
+                <span class="author-name">Emily Chen</span>
+                <span class="author-role">Photography Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-description">
+            We'd love to hear from you — drop by, call, or send us a message.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <h3>Address</h3>
+                <p>128 Maple Street, Downtown<br />Portland, OR 97201</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🕒</span>
+              <div>
+                <h3>Opening Hours</h3>
+                <p>Mon – Fri: 7:00 AM – 9:00 PM<br />Sat – Sun: 8:00 AM – 10:00 PM</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+15035550199">(503) 555-0199</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">✉️</span>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:hello@brewblisscafe.com">hello@brewblisscafe.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <span class="error-msg" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <span class="error-msg" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <span class="error-msg" id="subjectError"></span>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <span class="error-msg" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message
+              </button>
+              <p class="form-success" id="formSuccess">
+                Thank you! Your message has been sent. We'll get back to you soon.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">Brew Bliss</span>
+          </a>
+          <p class="footer-desc">
+            Your daily dose of happiness — freshly brewed coffee, delicious
+            desserts, and cozy moments in every cup.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook" class="social-icon">f</a>
+            <a href="#" aria-label="Instagram" class="social-icon">ig</a>
+            <a href="#" aria-label="Twitter" class="social-icon">tw</a>
+            <a href="#" aria-label="YouTube" class="social-icon">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>128 Maple Street, Portland</li>
+            <li><a href="tel:+15035550199">(503) 555-0199</a></li>
+            <li><a href="mailto:hello@brewblisscafe.com">hello@brewblisscafe.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li>Mon – Fri: 7AM – 9PM</li>
+            <li>Sat – Sun: 8AM – 10PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Brew Bliss Café. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
